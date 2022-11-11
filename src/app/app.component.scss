@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  justify-content: space-around;
+
+  .left {
+    width: 30%;
+    // border-right: grey 2px solid;
+  }
+
+  .right {
+    width: 60%;
+  }
+}

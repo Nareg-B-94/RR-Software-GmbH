@@ -1,0 +1,17 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  textarea {
+    resize: none;
+    color: black;
+  }
+  mat-form-field {
+    width: 300px;
+  }
+
+  mat-card {
+    margin: 20px;
+  }
+}

@@ -1,0 +1,14 @@
+<div class="content">
+  <h2>Add Your Note</h2>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Title</mat-label>
+    <textarea [(ngModel)]="title" matInput placeholder="Title"></textarea>
+  </mat-form-field>
+  <mat-form-field class="example-full-width text" appearance="fill">
+    <mat-label>Text</mat-label>
+    <textarea [(ngModel)]="text" matInput placeholder="Text"></textarea>
+  </mat-form-field>
+  <button (click)="addNote()" mat-fab color mat-raised-button color="accent">
+    Add
+  </button>
+</div>

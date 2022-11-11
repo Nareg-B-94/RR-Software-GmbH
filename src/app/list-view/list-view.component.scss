@@ -1,0 +1,35 @@
+.content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+h1 {
+  margin-left: 15px;
+}
+
+button {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+mat-card {
+  height: 100px;
+  width: 250px;
+  overflow-x: auto;
+  border-radius: 8px;
+  margin: 25px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.created-notes {
+  max-width: 200px;
+  overflow-y: hidden;
+  cursor: pointer;
+
+  margin: 20px;
+  span {
+    max-width: 200px;
+  }
+}

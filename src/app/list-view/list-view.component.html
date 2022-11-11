@@ -1,0 +1,24 @@
+<h1>Notes</h1>
+<div class="content">
+  <mat-card *ngFor="let note of service.allNotes; let i = index">
+    <div (click)="openThisNote($event)" class="created-notes">
+      <h3>{{ note.title }}</h3>
+      <hr />
+      <span>{{ note.text }}</span>
+    </div>
+  </mat-card>
+  <div *ngIf="service.allNotes.length === 0">
+    <mat-card>
+      Title:
+      {{ demoTitle }}
+      <hr />
+
+      Text:
+      {{ demoNote }}
+    </mat-card>
+  </div>
+</div>
+
+<button (click)="openDialog()" mat-fab color mat-raised-button color="accent">
+  <mat-icon>add</mat-icon>
+</button>
